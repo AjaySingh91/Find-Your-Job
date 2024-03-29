@@ -34,9 +34,8 @@ function ScrollToTop() {
   return (
     <button
       type="button"
-      className={`fixed p-2 bg-white text-black shadow-lg rounded-full z-20 animate-bounce ${
-        isVisible ? " bottom-8 right-8" : "hidden"
-      }`}
+      className={`fixed p-2 bg-white text-black shadow-lg rounded-full z-20 animate-bounce ${isVisible ? " bottom-8 right-8" : "hidden"
+        }`}
       onClick={scrollToTop}
     >
       <ArrowUpIcon className="text-4xl" height={30} />

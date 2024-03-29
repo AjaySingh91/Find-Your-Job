@@ -33,7 +33,7 @@ const loginController = async (req, res) => {
     );
     res
       .cookie("token", token, {
-        domain: "http://localhost:5000",
+        domain: "find-your-job.onrender.com",
         expires: new Date(Date.now() + 86400000),
         httpOnly: true,
         sameSite: "none",

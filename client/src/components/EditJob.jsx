@@ -21,7 +21,7 @@ const EditJob = () => {
 
   const getJob = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/job/${id}`);
+      const response = await fetch(`https://find-your-job.onrender.comjob/${id}`);
       const jobData = await response.json();
       const { company, position, workLocation, locationType } = jobData.job;
       setCompany(company);

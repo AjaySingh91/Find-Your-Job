@@ -18,7 +18,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const body = { name, email, password, profilePic, resume };
-      const response = await fetch("http://localhost:5000/register", {
+      const response = await fetch("https://find-your-job.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
@@ -94,14 +94,14 @@ const Register = () => {
               onChange={(e) => setProfilePic(e.target.value)}
               type="text"
               label="Profile Pic URL"
-              // required
+            // required
             />
             <Input
               value={resume}
               onChange={(e) => setResume(e.target.value)}
               type="text"
               label="Resume URL"
-              // required
+            // required
             />
           </div>
           <Button type="submit" className="mt-6" fullWidth>

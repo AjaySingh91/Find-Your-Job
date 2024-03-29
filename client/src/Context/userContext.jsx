@@ -8,7 +8,7 @@ export const UserContextProvider = ({ children }) => {
   const Logout = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000//logout",
+        "https://find-your-job.onrender.com/logout",
         {
           method: "POST",
           headers: {

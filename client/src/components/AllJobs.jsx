@@ -19,7 +19,7 @@ const AllJobs = () => {
   }, []);
 
   const getJobs = async () => {
-    const { data } = await axios.get("http://localhost:5000/getJobs", {
+    const { data } = await axios.get("https://find-your-job.onrender.com/getJobs", {
       params: { page: page, size: LIMIT },
     });
 
