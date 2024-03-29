@@ -14,7 +14,7 @@ app.use(Express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://findyourjob.vercel.app", "http://localhost:5173"],
+    origin: ["https://find-your-job-indol.vercel.app", "http://localhost:5173"],
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
