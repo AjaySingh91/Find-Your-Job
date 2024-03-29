@@ -41,7 +41,7 @@ const Header = () => {
 
   //Function to fetch user data
   const fetchUser = async () => {
-    const response = await fetch("http://localhost:5000/profile", {
+    const response = await fetch("https://find-your-job.onrender.com/profile", {
       credentials: "include",
     });
     const data = await response.json();
